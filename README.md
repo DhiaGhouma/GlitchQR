@@ -1,73 +1,118 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<img width="1024" height="270" alt="Gemini_Generated_Image_uub8atuub8atuub8" src="https://github.com/user-attachments/assets/b3e30310-9ec1-44b5-900c-d553c017b835" />
 
-Currently, two official plugins are available:
+GlitchQR is a cyberpunk-themed QR code generator built with a hacking-interface aesthetic.  
+It allows users to instantly generate **highly customizable QR codes**, preview them live, and download them as **PNG** or **SVG**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The entire experience reflects the brand identity:  
+**GlitchQR — “Scan the signal inside the noise.”**
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+##Features
 
-## Expanding the ESLint configuration
+### Core Functionality
+- Generate QR codes from:
+  - Text  
+  - URL  
+  - Contact info  
+- Real-time live preview  
+- Download options:
+  - **PNG**
+  - **SVG**
+- Customization options:
+  - Color themes  
+  - Dot style (rounded, square, pixelated, glitch-style)  
+  - Background shape / theme  
+  - Error correction level  
+  - Optional **logo in the center**  
+- Save last used configuration via **localStorage**  
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Brand Identity & UI/UX
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Brand
+- **Name:** GlitchQR  
+- **Slogan:** *“Scan the signal inside the noise.”*  
+- Branding integrated throughout the app:
+  - Logo in header  
+  - Splash screen  
+  - Landing page  
+  - Download screen watermark  
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### Visual Design — Hacking / Cyberpunk aesthetic
+- Background: `#020403` / `#0b0f10`
+- Primary neon color: `#00ff95`
+- Accent colors: `#00e0ff`, `#b700ff`
+- Typography: **JetBrains Mono / Fira Code**
+- Effects:
+  - Glitch hover animations  
+  - Terminal-style buttons  
+  - Matrix-rain or glitch-noise animated background  
+  - Command-line inspired inputs  
+  - Glowing borders & neon lines  
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Pages & Components
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### Home / Main App
+
+#### Left Panel — User Input
+- Text/URL input  
+- Dropdown selectors:
+  - Style preset  
+  - Dot style  
+  - Color theme  
+  - Background theme  
+  - Error correction level  
+- Logo uploader  
+- “Generate QR” button  
+- Optional sound effects (keyboard clicks, glitch beeps)
+
+#### Right Panel — Live Preview
+- Real-time QR preview
+- Neon glowing container
+- Buttons:
+  - **Download PNG**
+  - **Download SVG**
+  - **Regenerate with random hacking theme**
+
+---
+
+## 🎛 Theme Presets
+
+At least **6 built-in cyberpunk themes**:
+
+1. **Matrix Green** – classic terminal green  
+2. **Cyberpunk Neon** – cyan + magenta glow  
+3. **Terminal Classic** – monochrome hacker screen  
+4. **Glitch Mode** – distorted colors / static  
+5. **Blueprint Tech** – cyan blueprint grid  
+6. **Dark Plasma** – purple/blue neon waves  
+
+Each preset applies:
+- Dot style  
+- Accent colors  
+- Background theme  
+- Animation intensity  
+
+---
+
+##  Tech Stack
+
+- **React** + TailwindCSS (or Next.js if SSR required)
+- **QR generation library**: `qrcode.react` or `qr-code-styling`
+- CSS + JS animations (matrix rain, glitch, typing cursor)
+- LocalStorage for saving configurations
+
+---
+
+##  Responsiveness
+
+- **Desktop** → 2-panel layout  
+- **Mobile** → Vertical stacked layout with smooth transitions  
+- Full cyberpunk theme preserved on all screen sizes  
+
+
