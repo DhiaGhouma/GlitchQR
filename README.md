@@ -1,5 +1,5 @@
-<img width="1024" height="1024" alt="Gemini_Generated_Image_uub8atuub8atuub8" src="https://github.com/user-attachments/assets/b48ebdda-fdb6-48a6-a4ba-7f04cd1d901b" />
 
+<img width="1024" height="270" alt="Gemini_Generated_Image_uub8atuub8atuub8" src="https://github.com/user-attachments/assets/b3e30310-9ec1-44b5-900c-d553c017b835" />
 
 GlitchQR is a cyberpunk-themed QR code generator built with a hacking-interface aesthetic.  
 It allows users to instantly generate **highly customizable QR codes**, preview them live, and download them as **PNG** or **SVG**.
